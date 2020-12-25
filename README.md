@@ -33,3 +33,19 @@ The route is updated to point to the three function depending on the urls.
 Cookies are by default encrypter. To disable the encryption for a set of cookies, their keys
 must be added to the 'except' array in the 'EncryptCookies.php' in 'App/Http/Middleware/'.
 In this example, the 'name' cookie key was added to the 'except' array. 
+
+## Last edit
+
+Added bootstrap :
+
+`composer require laravel/ui`
+
+`php artisan ui bootstrap`
+
+`npm install`
+
+`npm run dev`
+
+In the index.blade.php, the Bootstrap API can be included by :
+
+`<link rel="stylesheet" href="{{ asset('css/app.css')  }}">`

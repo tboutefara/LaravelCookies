@@ -1,7 +1,9 @@
 <html>
 <head>
     <title>Laravel Cookies</title>
+    <link rel="stylesheet" href="{{ asset('css/app.css')  }}">
     <style>
+        
         .content {
             width : 600px;
             margin-left: auto;
@@ -12,13 +14,6 @@
             width : 300px;
             height : 30px;
             margin : 5px;
-            border-radius : 10px;
-        }
-
-        .btn {
-            background-color : #1045b9;
-            color : white;
-            border : none;
         }
 
     </style>
@@ -31,9 +26,9 @@
         @else
             <h1>I do not know you</h1>
             <p>Enter your name to subscribe :</p>
-            <form action="subscribe">
-                <input type="text" name="name" class="input"/><br>
-                <input type="submit" value="Subscribe" class="input btn"/>
+            <form action="subscribe" class="form-group">
+                <input type="text" name="name" class="form-control input"/><br>
+                <input type="submit" value="Subscribe" class="btn btn-primary input"/>
             </form>
         @endif
     </div>
